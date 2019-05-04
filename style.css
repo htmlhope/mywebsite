@@ -1,0 +1,418 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*My code starts here */
+
+* {
+  text-decoration: none;
+}
+
+body {
+
+
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  font-family: 'Abel', sans-serif;
+}
+
+
+header .header-brand {
+  font-size: 26px;
+  color: #111;
+  font-weight: 1000;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 0 20px 0;
+}
+
+header .header-cases {
+  display: none;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+
+}
+
+/*Here we begin to add things we would like to see changed when viewing it in the desktop version. The 'min-width: 1000px' means that if the width is greater than 1000px, which would happen if viewed on a desktop, then the following changes that we add within the {} would take place*/
+
+/*Media query*/
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+  margin: 31px 0;
+  text-align: left;
+  line-height: 38px;
+  padding: 0px 20px 0px 40px;
+  border-right: 3px solid #111;
+  float: left;
+  }
+
+  header nav ul {
+    margin: 20px 0px 0px 20px;
+    float: left;
+  }
+
+
+  header nav ul li a {
+    line-height: 60px;
+  }
+
+  header .header-cases {
+    display: block;
+    font-family: Abel;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+    line-height: 38px;
+    border: 1px solid #111;
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding: 0 20px;
+
+  }
+}
+
+/*Styling for Index page*/
+
+/*This .index-banner background image styling is of utmost importance! It makes the picture look right.*/
+
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url('images/knitting.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-height: 50px;
+  display: table;
+}
+/*Style the text inside the banner:*/
+
+.index-banner h2{
+  font-family: 'Abel';
+  font-size: 60px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  /*text-shadow makes the font pop out and easier to see against a background with white, since #fff is the font color */
+  text-shadow: 2px 2px 8px #111;
+  /*Add some spacing between lines of text with line-height property*/
+  line-height: 70px;
+  /*display:table along with display:table-cell in the vertical-center class centers the text!*/
+}
+
+
+
+.vertical-center {
+ display: table-cell;
+ vertical-align: middle;
+
+}
+
+.index-banner h1 {
+  font-family: 'Srisakdi', cursive;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 100;
+  font-weight: 900;
+  text-shadow: 2px 2px 8px #111;
+  line-height: 40px;
+}
+
+
+
+header nav ul {
+  display: block;
+  color: #111;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  padding: 0 10px;
+}
+
+/*Adding div after the class name (.index-links) styles all of the divs at once. This way is better b/c it allows you to minimize code and simplify it.*/
+
+.index-links div h3 {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px)
+  height: 100px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: Abel;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.index-links a {
+  color: black;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+
+  }
+  .index-banner {
+    height: 450px;
+  }
+  .index-banner h1 {
+    display: block;
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .index-links {
+    overflow: hidden;
+  }
+  .index-links div {
+    margin: 20px 10px 0;
+    height: 230px;
+    background-color: #f2f2f2;
+    float: left;
+  }
+  /*Using ''!important' forces an override of all previous styling of the width. The styling of 'width: calc(25% - 60px)' now overrides all previous styling. */
+
+  /*Sidenote: I couldn't tell a difference between using '!important' or not. The video shows it being used but it worked fine for me before I included it*/
+  .index-boxlink-square {
+      width: calc(25% - 20px) !important;
+  }
+  .index-boxlink-rectangle {
+    width: calc(50% - 20px) !important;
+  }
+
+  /*Here I had to add padding in order to center the text inside the squares/rectangeles (h3). The video used 'line-height' to center the text but things got really weird when I used it.*/
+
+  .index-links div h3 {
+    padding-top: 75px;
+  }
+}
+
+/*End of media query!*/
+
+/*Footer section*/
+
+/*We added a padding (top and bottom) instead of height in order to keep the height flexible aka self-adjusts.*/
+
+footer {
+  width: calc(100% - 80px);
+  padding: 40px;
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+/*We set the width to fit-content in order to allow for growth as you add more items*/
+
+footer ul  {
+ width: fit-content;
+ float: left;
+ padding-left: 20px;
+}
+
+footer ul li {
+ display: block;
+ list-style: none;
+ font-family: Abel;
+ font-size: 24px;
+ line-height: 20px;
+
+}
+
+footer ul li a  {
+ font-family: Abel;
+ font-size: 24px;
+ color: black;
+ line-height: 30px;
+}
+
+.footer-links-main {
+  padding-bottom: 20px;
+}
+
+.footer-links-cases{
+  text-transform: uppercase;
+  display: none;
+}
+
+.footer-sm {
+  width: 65px;
+  float: right;
+}
+
+.footer-sm img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*I had trouble with the sizing of each icon, so I decided to separate each icon with a div and style them separately. */
+
+.facebookicon {
+  width: 100px;
+ position: relative;
+ right: 10px;
+}
+
+.instagramicon {
+ width: 65px;
+ position: relative;
+ left: 5px;
+ height: 72px;
+}
+
+.linkedinicon {
+  width: 70px;
+  position: relative;
+  padding-top: -30px;
+  height: 72px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-links-cases {
+    display: block;
+  }
+
+  footer ul {
+  padding-right: 30px;
+  }
+
+  .footer-links-cases li {
+      font-family: Abel;
+      font-size: 24px;
+      color: black;
+      line-height: 40px;
+}
+  .footer-links-main li {
+    line-height: 40px;
+  }
+
+  footer {
+    border: 2px solid black;
+
+
+  }
+
+
+
+  }
+
+}
